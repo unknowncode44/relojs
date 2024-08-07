@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relo.js</title>
+    <link rel="stylesheet" href="./public/styles.css">
+    <!-- asignamos un favicon al documento -->
+    <link rel="icon" type="image/x-icon" href="./public/images/icons/reloj.png">
+    <!-- usamos una cdn con una libreria -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+</head>
+<body>
+    <div id="contenedor-reloj">
+        <!-- Se va a trabajar con multiples capas -->
+
+        <!-- fondo -->
+        <div id="fondo">
+        </div>
+
+        <!-- reloj digital -->
+        <div id="hora-digital">
+            <span id="texto-hora-digital">00:00:00</span>
+        </div>
+
+        <!-- manecillas -->
+        <div id="manecillas">
+            <svg id="puntos" width="300" height="300">
+            </svg>
+
+            <!-- manecilla para horas -->
+            <div id="horas">
+                <svg width="300" height="300">
+                    <line x1="150" y1="50" x2="150" y2="150" stroke="black" stroke-width="6" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <!-- manecilla minutos -->
+            <div id="minutos">
+                <svg width="300" height="300">
+                    <line x1="150" y1="30" x2="150" y2="150" stroke="black" stroke-width="4" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <!-- manecilla segundos -->
+            <div id="segundos">
+                <svg width="300" height="300">
+                    <line x1="150" y1="30" x2="150" y2="150" stroke="red" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/script.js"></script>
+    
+</body>
+</html>
